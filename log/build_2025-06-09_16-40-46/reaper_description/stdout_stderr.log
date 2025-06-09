@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/reaper_description/reaper_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/reaper_description/reaper_description.egg-info/dependency_links.txt
+writing entry points to ../../build/reaper_description/reaper_description.egg-info/entry_points.txt
+writing requirements to ../../build/reaper_description/reaper_description.egg-info/requires.txt
+writing top-level names to ../../build/reaper_description/reaper_description.egg-info/top_level.txt
+reading manifest file '../../build/reaper_description/reaper_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/reaper_description/reaper_description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying urdf/URDFassy.urdf -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/urdf/
+copying config/reaper_control.yaml -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/config/
+running install_egg_info
+removing '/home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/reaper_description/reaper_description.egg-info to /home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/cameron/control_sim/build/reaper_description/install.log'

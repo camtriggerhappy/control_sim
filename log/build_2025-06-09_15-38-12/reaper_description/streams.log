@@ -1,0 +1,53 @@
+[0.456s] Invoking command in '/home/cameron/control_sim/src/reaper_description': PYTHONPATH=/home/cameron/control_sim/build/reaper_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reaper_description build --build-base /home/cameron/control_sim/build/reaper_description/build install --record /home/cameron/control_sim/build/reaper_description/install.log --single-version-externally-managed install_data
+[0.606s] running egg_info
+[0.607s] creating ../../build/reaper_description/reaper_description.egg-info
+[0.610s] writing ../../build/reaper_description/reaper_description.egg-info/PKG-INFO
+[0.610s] writing dependency_links to ../../build/reaper_description/reaper_description.egg-info/dependency_links.txt
+[0.610s] writing entry points to ../../build/reaper_description/reaper_description.egg-info/entry_points.txt
+[0.611s] writing requirements to ../../build/reaper_description/reaper_description.egg-info/requires.txt
+[0.611s] writing top-level names to ../../build/reaper_description/reaper_description.egg-info/top_level.txt
+[0.611s] writing manifest file '../../build/reaper_description/reaper_description.egg-info/SOURCES.txt'
+[0.612s] reading manifest file '../../build/reaper_description/reaper_description.egg-info/SOURCES.txt'
+[0.612s] writing manifest file '../../build/reaper_description/reaper_description.egg-info/SOURCES.txt'
+[0.612s] running build
+[0.612s] running build_py
+[0.612s] creating /home/cameron/control_sim/build/reaper_description/build
+[0.612s] creating /home/cameron/control_sim/build/reaper_description/build/lib
+[0.612s] creating /home/cameron/control_sim/build/reaper_description/build/lib/reaper_description
+[0.612s] copying reaper_description/__init__.py -> /home/cameron/control_sim/build/reaper_description/build/lib/reaper_description
+[0.612s] running install
+[0.612s] running install_lib
+[0.613s] creating /home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description
+[0.613s] copying /home/cameron/control_sim/build/reaper_description/build/lib/reaper_description/__init__.py -> /home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description
+[0.613s] byte-compiling /home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description/__init__.py to __init__.cpython-310.pyc
+[0.613s] running install_data
+[0.613s] creating /home/cameron/control_sim/install/reaper_description/share/ament_index
+[0.613s] creating /home/cameron/control_sim/install/reaper_description/share/ament_index/resource_index
+[0.613s] creating /home/cameron/control_sim/install/reaper_description/share/ament_index/resource_index/packages
+[0.613s] copying resource/reaper_description -> /home/cameron/control_sim/install/reaper_description/share/ament_index/resource_index/packages
+[0.613s] copying package.xml -> /home/cameron/control_sim/install/reaper_description/share/reaper_description
+[0.613s] copying launch/launch.py -> /home/cameron/control_sim/install/reaper_description/share/reaper_description
+[0.614s] copying launch/gz_simulator_launch.py -> /home/cameron/control_sim/install/reaper_description/share/reaper_description
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/urdf
+[0.614s] copying urdf/robot.sdf -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/urdf/
+[0.614s] copying urdf/URDFassy.urdf -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/urdf/
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/world
+[0.614s] copying world/depot.sdf -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/world/
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/rviz
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/collision
+[0.614s] copying meshes/collision/Chassis.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/collision/
+[0.614s] copying meshes/collision/Linkage.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/collision/
+[0.614s] copying meshes/collision/Bucket.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/collision/
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/visual
+[0.614s] copying meshes/visual/Chassis.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/visual/
+[0.614s] copying meshes/visual/Linkage.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/visual/
+[0.614s] copying meshes/visual/Bucket.STL -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/meshes/visual/
+[0.614s] creating /home/cameron/control_sim/install/reaper_description/share/reaper_description/config
+[0.614s] copying config/gz_bridge.yaml -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/config/
+[0.614s] copying config/default_config.rviz -> /home/cameron/control_sim/install/reaper_description/share/reaper_description/config/
+[0.614s] running install_egg_info
+[0.615s] Copying ../../build/reaper_description/reaper_description.egg-info to /home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages/reaper_description-0.0.0-py3.10.egg-info
+[0.616s] running install_scripts
+[0.628s] writing list of installed files to '/home/cameron/control_sim/build/reaper_description/install.log'
+[0.642s] Invoked command in '/home/cameron/control_sim/src/reaper_description' returned '0': PYTHONPATH=/home/cameron/control_sim/build/reaper_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/control_sim/install/reaper_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reaper_description build --build-base /home/cameron/control_sim/build/reaper_description/build install --record /home/cameron/control_sim/build/reaper_description/install.log --single-version-externally-managed install_data
