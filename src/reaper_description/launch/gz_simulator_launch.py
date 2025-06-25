@@ -12,15 +12,18 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from pathlib import Path
 from launch.conditions import IfCondition
+from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+    pkg_share = FindPackageShare('reaper_description').find('reaper_description')
     urdf_file= LaunchConfiguration('urdf_file')
     # Check if we're told to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
     bringup_dir = get_package_share_directory('reaper_description')
     world = os.path.join(bringup_dir , "world", "depot.sdf")
     sdf_file  =  os.path.join(bringup_dir, 'urdf', 'robot.sdf')
+    controller_yaml = os.path.join(pkg_share, 'config', 'reaper_control.yaml')
     #with open(sdf_file, 'r') as infp:
      #   robot_desc = infp.read()
     robot_desc = ParameterValue(
@@ -45,13 +48,6 @@ def generate_launch_description():
         ])
     )
 
-    joint_state_publisher = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        output='screen',
-        parameters=[{'use_sim_time': True}],
-    )
 
     bridge = Node(
         package='ros_gz_bridge',
@@ -83,8 +79,8 @@ def generate_launch_description():
         arguments=[
             "-name",
             "robot",
-            "-topic",
-            "/robot_description",
+            "-file",
+            os.path.join(bringup_dir, 'urdf', 'Reaper.sdf'),
             "-x",
             "0",
             "-y",
@@ -107,5 +103,5 @@ def generate_launch_description():
         DeclareLaunchArgument('urdf_file',default_value=os.path.join(bringup_dir, 'urdf', 'URDFassy.urdf'),description='Whether to start RVIZ'),
         DeclareLaunchArgument('use_robot_state_pub',default_value='True',description='Whether to start the robot state publisher'),
         gz_resource_path,
-        gz_sim,bridge, spawn_entity,start_robot_state_publisher_cmd,tf_map,joint_state_publisher
+        gz_sim,bridge, spawn_entity,start_robot_state_publisher_cmd,tf_map,
     ])

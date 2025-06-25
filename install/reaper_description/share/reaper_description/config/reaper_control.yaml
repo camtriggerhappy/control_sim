@@ -1,19 +1,21 @@
+# reaper_control.yaml
+
+# top‐level map: each entry is a node name under which parameters apply
 controller_manager:
   ros__parameters:
-    update_rate: 100  # Hz
-
-    joint_trajectory_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+    update_rate: 100
 
     joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
+      ros__parameters:
+        publish_rate: 50
 
-joint_trajectory_controller:
-  ros__parameters:
-    joints:
-      - joint_Linkage
-    command_interfaces:
-      - effort 
-    state_interfaces:
-      - position
-      - velocity
+    diff_drive_controller:
+      ros__parameters:
+        type: diff_drive_controller/DiffDriveController
+        left_wheel_names: ["left_track_joint"]
+        right_wheel_names: ["right_track_joint"]
+        wheel_separation: 0.65
+        wheel_radius: 0.254
+        cmd_vel_timeout: 0.5
+        base_frame_id: "Chassis"
+        publish_rate: 50
